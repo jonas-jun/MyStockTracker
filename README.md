@@ -9,14 +9,14 @@ Code Description
   get stock information: price, volumn, supply and demand, and so on.  
   **[example]** after market on 2020-11-13
 
-![image_stock.jpg](attachment:image_stock.jpg)
+![image_stock.jpg](./img/image_stock.jpg)
   
 ### _class scrap_news_
   get news information from Naver news. (start date to end date)  
   **[example]** maxpage=30, in late 2days, sorting=1 (from new ones to old ones)
     
     name, title, date, media, summary, link
-![image_news.jpg](attachment:image_news.jpg)
+![image_news.jpg](./img/image_news.jpg)
   
 ### _def full_run_
   1. debug all process.
@@ -28,7 +28,7 @@ companies = ['두산중공업', '세아제강', '위세아이텍', '이엔드디
 full_run(companies=companies, start=20201111, end=20201114, maxpage=3)  
   
 **[example]**
-![image.png](attachment:image.png)
+![image_run](./img/image_run.jpg)
 
 
 ```python
