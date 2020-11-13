@@ -1,5 +1,7 @@
 # Stock Investing Management Program
 ---  
+by Jonas-Jun, 2020-11-14
+  
 Code Description
 -----------
 
