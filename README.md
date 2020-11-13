@@ -1,6 +1,6 @@
 # Stock Investing Management Program
 ---  
-by Jonas-Jun, 2020-11-14
+by Junmai[https://github.com/jonas-jun/stock_management], 2020-11-14
   
 Code Description
 -----------
