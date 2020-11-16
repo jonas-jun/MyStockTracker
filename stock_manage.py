@@ -4,6 +4,10 @@ import pandas as pd
 from datetime import datetime, timedelta
 import re
 
+'''
+Nov. 2020. by Junmai
+'''
+
 class stock_inform:
     
     def __init__(self):
@@ -204,5 +208,5 @@ def full_run(companies, start=ago_2, end=today, sort=1, maxpage=3):
     export_multi_sheets([prices, news])
 
 # 기본 디버깅: 최근 3일 동안의 기사, 최신순(sort=1), 최대 3페이지
-companies = ['두산중공업', '세아제강', '위세아이텍', '이엔드디', '솔트룩스', '코아스템', '포스코케미칼']
-full_run(companies=companies)
+companies = ['두산중공업', '세아제강', '위세아이텍', '이엔드디', '솔트룩스', '삼성엔지니어링', '미코', '포스코케미칼']
+full_run(companies=companies, start=20201114, sort=1, maxpage=3)
