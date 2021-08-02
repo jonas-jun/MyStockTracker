@@ -1,6 +1,6 @@
 # Stock Investing Management Program
   
-by Junmai [github](https://github.com/jonas-jun/stock_management), 2020-11-14
+by Junmai [github](https://github.com/jonas-jun/stock_management)  
 2021-08-03 major update
 - existing stock price scraper did not work well, because 'naver.com/sise_day' pages might be changed not to be scrapped.
 - the new program scrap stock informs from 'naver.com/sise' pages  
@@ -30,7 +30,7 @@ run all.
 python main.py --start 20210801 --end 20210803 --sort 1 --max_page 3  
 "상장 기업명을 space로 구분하여 정확하게 입력해주세요"  
 NAVER 카카오 삼성전자   
-
+![example_case](./img/new_usecase.jpg)
 
 ---------
 [outdated version]  
