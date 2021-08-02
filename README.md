@@ -1,11 +1,40 @@
 # Stock Investing Management Program
   
 by Junmai [github](https://github.com/jonas-jun/stock_management), 2020-11-14
+2021-08-03 major update
+- existing stock price scraper did not work well, because 'naver.com/sise_day' pages might be changed not to be scrapped.
+- the new program scrap stock informs from 'naver.com/sise' pages  
 ***
 Code Description
 -----------
+## price_inform.py
+get stock information: price, volume, rate, code
 
-### _class stock_inform_
+## scrap_news.py
+get news information from Naver news.
+- start, end: start date and end date (defualt: 3 days ago to today)
+- sort: {0: reliable, 1: latest}
+- max_page: how many pages (Naver news) to scrap?
+
+## main.py
+run all.  
+- --start
+- --end
+- --sort
+- --max_page
+
+'NAVER 카카오 삼성전자' (split by a space)  
+
+## How to run?
+[example]  
+python main.py --start 20210801 --end 20210803 --sort 1 --max_page 3  
+"상장 기업명을 space로 구분하여 정확하게입력해주세요"  
+NAVER 카카오 삼성전자   
+
+
+---------
+
+### _class stock_inform_ 
   get stock information: price, volumn, supply and demand, and so on.  
   **[example]** after market on 2020-11-13
 
