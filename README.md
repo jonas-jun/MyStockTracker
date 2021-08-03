@@ -61,6 +61,3 @@ full_run(companies=companies, start=20201111, end=20201114, maxpage=3)
 ![image_run](./img/image_run.jpg)
 
 
-```python
-
-```

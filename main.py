@@ -1,4 +1,4 @@
-import os, sys, re
+import sys, re
 from typing import List
 from price_inform import exchange_inform
 from scrap_news import news_scraper
