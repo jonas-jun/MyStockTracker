@@ -1,6 +1,6 @@
 # Stock Investing Management Program
   
-by Junmai [github](https://github.com/jonas-jun/stock_management)  
+by Junmay [github](https://github.com/jonas-jun/stock_management)  
 2021-08-03 major update
 - existing stock price scraper did not work well, because 'naver.com/sise_day' pages might be changed not to be scrapped.
 - the new program scrap stock informs from 'naver.com/sise' pages  
