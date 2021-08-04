@@ -1,4 +1,4 @@
-# Stock Investing Management Program
+# My Stock Tracker: Stock tracking & management program
   
 by Junmay [github](https://github.com/jonas-jun/stock_management)  
 2021-08-03 major update
