@@ -15,7 +15,16 @@ def export_multi_sheets(df_list: List, filename: str):
 
 
 if __name__ == '__main__':
-    
+    welcome = '''
+    ====================
+    Stock Tracker has been run
+    code by Junmay
+    https://github.com/jonas-jun/stock_management
+    ====================
+    '''
+
+    print(welcome)
+
     today = datetime.today().date()
     today_str = re.sub('-', '', str(today))
     ago_3 = today - timedelta(days=3)
