@@ -1,4 +1,4 @@
-# My Stock Tracker: Stock tracking & management program
+# My Stock Tracker: Check your stocks easily
   
 by Junmay [github](https://github.com/jonas-jun/stock_management)  
 2021-08-03 major update
