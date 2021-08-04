@@ -26,12 +26,17 @@ run all.
 'NAVER 카카오 삼성전자' (split by a space)  
 
 ## How to run?
-[example]  NAVER, 카카오, 삼성전자의 현재가(오늘 종가) 및 8월 1일 ~ 8월 3일 네이버뉴스 (최신순) 최대 3페이지까지 크롤링  
-python main.py --start 20210801 --end 20210803 --sort 1 --max_page 3  
+[example]  삼성전자, 카카오, 라온피플, 그린플러스, NAVER의 현재가(오늘 종가) 및 2021년 7월 30일 ~ 2021년 8월 3일 네이버뉴스 (최신순) 최대 3페이지까지 크롤링  
+python main.py --start 20210730 --end 20210803 --sort 1 --max_page 3  
 "상장 기업명을 space로 구분하여 정확하게 입력해주세요"  
-NAVER 카카오 삼성전자   
-![example_case](./img/new_usecase.jpg)
+삼성전자 카카오 라온피플 그린플러스 NAVER   
+![example_case](./img/new_usecase_1.jpg)  
 
+## result excel file
+- sheet1: 당일 현재 시점 주가 정보  
+![sheet1](./img/new_stock.jpg)  
+- sheet2: 옵션에 따라 크롤링한 뉴스 정보  
+![sheet2](./img/new_news.jpg)  
 ---------
 [outdated version]  
 
