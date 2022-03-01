@@ -185,9 +185,13 @@ ago_2 = today - timedelta(days=2)
 today = re.sub('-', '', str(today))
 ago_2 = re.sub('-', '', str(ago_2))
 
+import sys
+import os
+folder = sys.path[0]
+
 def export_multi_sheets(dicts, filename='{}_mystocks'.format(str(today))):
     f = filename + '.xlsx'
-    with pd.ExcelWriter(f) as writer:
+    with pd.ExcelWriter(f) as writer: # pylint: disable=abstract-class-instantiated
         for i in range(len(dicts)):
             pd.DataFrame(dicts[i]).to_excel(writer, index=False, sheet_name='sheet_{}'.format(str(i)))
     print('{}_mystocks.xlsx로 내보내기 완료'.format(str(today)))
@@ -207,6 +211,14 @@ def full_run(companies, start=ago_2, end=today, sort=1, maxpage=3):
 
     export_multi_sheets([prices, news])
 
-# 기본 디버깅: 최근 3일 동안의 기사, 최신순(sort=1), 최대 3페이지
-companies = ['두산중공업', '세아제강', '위세아이텍', '이엔드디', '솔트룩스', '삼성엔지니어링', '미코', '포스코케미칼']
-full_run(companies=companies, start=20201114, sort=1, maxpage=3)
+#default parameters: 최근 3일 동안의 기사, 최신순(sort=1), 최대 3페이지
+companies = ['두산중공업', '위세아이텍', '이엔드디', '셀트리온', '유니셈', 'DL이앤씨', 'DL', '와이엠티']
+#full_run(companies=companies, start=20210112, sort=1, maxpage=3)
+
+def only_news(companies, start=ago_2, end=today, sort=1, maxpage=3):
+    t1 = scrap_news()
+    t1.get_names(companies)
+    news = t1.get_news(sort=sort, start=start, end=end, maxpage=maxpage)
+    pd.DataFrame(news).to_excel(os.path.join(folder, '{}_stock_news.xlsx').format(str(today)), index=False)
+
+only_news(companies, start=20210801, sort=1, maxpage=5)

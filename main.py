@@ -31,10 +31,10 @@ if __name__ == '__main__':
     ago_3_str = re.sub('-', '', str(ago_3))
 
     parser = argparse.ArgumentParser()
-    #parser.add_argument('--corps', type=str, default='NAVER 위세아이텍 이엔드디 라온피플 그린플러스') # NAVER 위세아이텍 이엔드디 라온피플 그린플러스
+    # parser.add_argument('--corps', type=str, default='NAVER 위세아이텍 이엔드디 라온피플 그린플러스') # NAVER 위세아이텍 이엔드디 라온피플 그린플러스
     parser.add_argument('--start', type=int, default=ago_3_str) # 20210801
     parser.add_argument('--end', type=int, default=today_str) # 20210803
-    #parser.add_argument('--path_chrome', type=str, default='/Users/jonas/github/N_shop_scraper/chromedriver')
+    # parser.add_argument('--path_chrome', type=str, default='/Users/jonas/github/N_shop_scraper/chromedriver')
     parser.add_argument('--sort', type=int, default=1) # 1: 최신순
     parser.add_argument('--max_page', type=int, default=3) # 네이버에서 검색시 최대 0페이지의 기사 크롤링
     args = parser.parse_args()
