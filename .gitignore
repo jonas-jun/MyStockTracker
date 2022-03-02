@@ -236,3 +236,5 @@ $RECYCLE.BIN/
 
 # test.ipynb
 *.ipynb
+# excel result files
+*.xlsx
